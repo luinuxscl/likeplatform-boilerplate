@@ -1,6 +1,6 @@
 # Progreso de Desarrollo — LikePlatform
 
-**Última actualización:** 2026-05-05
+**Última actualización:** 2026-05-06
 
 ---
 
@@ -10,7 +10,7 @@
 |------|--------|--------|
 | Sprint 0: Estructura Inicial | 6 | 100% completado |
 | Fase 1: Fundación | 40 | 100% completado |
-| Fase 2: Vistas, Widgets y Traducciones | 25 | 0% pendiente |
+| Fase 2: Vistas, Widgets y Traducciones | 25 | 100% completado |
 
 ---
 
@@ -103,38 +103,69 @@
 
 ---
 
-## Pendiente — Fase 2
+## Pendiente — Fase 3
 
 ### Core
 
-- [ ] Vistas para API keys (index, create, show) — actualmente el controller existe pero las vistas no
-- [ ] Implementar `WidgetContract` concretos para el core (welcome, stats, activity)
-- [ ] Implementar `SidebarItemContract` concretos (dashboard, api-keys, users, settings)
-- [ ] Implementar `ApiPermissionContract` concretos
-- [ ] Implementar `ThemeContract` concretos (5 temas por defecto: ocean, forest, sunset, midnight, lavender)
 - [ ] Sistema de Passkeys nativo de Laravel 13
-- [ ] Verificación de email con Fortify
-- [ ] Gestión de perfil de usuario (editar nombre, email, contraseña)
-- [ ] Gestión de usuarios (CRUD admin)
-- [ ] Sidebar dinámica basada en `SidebarRegistry`
-- [ ] Widgets del dashboard con Livewire (welcome, stats, recent users)
-- [ ] Traducciones `lang/es/` y `lang/en/` completas
+- [ ] Dashboard con gráficos y métricas en tiempo real
+- [ ] Gestión de roles y permisos (UI admin)
+- [ ] Alertas de presupuesto IA
+- [ ] Integración real con Laravel AI SDK (requiere API keys de providers)
+- [ ] Landing page (welcome.blade.php) con diseño completo
+- [ ] Tests de feature y unitarios
 
 ### Webhooks
 
-- [ ] Controladores para CRUD de webhook endpoints
-- [ ] Vistas para gestión de webhooks (index, create, show)
-- [ ] Panel de historial de entregas con reintentos
 - [ ] Scheduler para reintentos automáticos
 - [ ] Registro de eventos en `WebhookEventRegistry` del core
+- [ ] UI de reintentos manuales
 
 ### AI
 
-- [ ] Controladores para CRUD de plantillas de prompts
-- [ ] Controladores para panel de estadísticas y costos
-- [ ] Vistas para gestión de AI (templates, stats, playground)
-- [ ] Integración real con Laravel AI SDK (requiere API keys de providers)
-- [ ] Alertas de presupuesto
+- [ ] AI playground (chat interactivo con templates)
+- [ ] Integración real con Laravel AI SDK
+- [ ] Alertas de presupuesto por email/notificación
+- [ ] Rate limiting por usuario/modelo
+
+---
+
+## Fase 2: Vistas, Widgets y Traducciones
+
+### Core
+
+| Tarea | Estado |
+|-------|--------|
+| Vistas para API keys (index, create, show) | completado |
+| Implementar `WidgetContract` concretos (welcome, stats, activity) | completado |
+| Implementar `SidebarItemContract` concretos (dashboard, api-keys, users, webhooks, ai, profile) | completado |
+| Implementar `ApiPermissionContract` concretos (5 permisos core) | completado |
+| Implementar `ThemeContract` concretos (ocean, forest, sunset, midnight, lavender) | completado |
+| Widgets del dashboard con Livewire (welcome, stats, activity) | completado |
+| Sidebar dinámica basada en `SidebarRegistry` | completado |
+| Traducciones `lang/es/` y `lang/en/` completas (12 archivos) | completado |
+| Gestión de perfil de usuario (editar nombre, email, contraseña, 2FA) | completado |
+| Gestión de usuarios CRUD (admin) | completado |
+| Policy de API keys (view, delete) | completado |
+| Icon component (SVG inline) | completado |
+
+### Webhooks
+
+| Tarea | Estado |
+|-------|--------|
+| Controladores para CRUD de webhook endpoints | completado |
+| Vistas para gestión de webhooks (index, create, show) | completado |
+| Panel de historial de entregas | completado |
+| Traducciones webhooks (en/es) | completado |
+
+### AI
+
+| Tarea | Estado |
+|-------|--------|
+| Controladores para CRUD de plantillas de prompts | completado |
+| Controladores para panel de estadísticas y costos | completado |
+| Vistas para gestión de AI (templates, stats) | completado |
+| Traducciones AI (en/es) | completado |
 
 ---
 
