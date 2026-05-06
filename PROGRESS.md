@@ -10,7 +10,7 @@
 |------|--------|--------|
 | Sprint 0: Estructura Inicial | 6 | 100% completado |
 | Fase 1: Fundación | 40 | 100% completado |
-| Fase 2: Vistas, Widgets y Traducciones | 25 | 100% completado |
+| Fase 3: Dashboards, Roles, Landing, Passkeys, Tests, Webhooks, AI | 14 | 93% completado |
 
 ---
 
@@ -103,30 +103,13 @@
 
 ---
 
-## Pendiente — Fase 3
+## Pendiente — Fase 4
 
 ### Core
 
-- [ ] Sistema de Passkeys nativo de Laravel 13
-- [ ] Dashboard con gráficos y métricas en tiempo real
-- [ ] Gestión de roles y permisos (UI admin)
-- [ ] Alertas de presupuesto IA
-- [ ] Integración real con Laravel AI SDK (requiere API keys de providers)
-- [ ] Landing page (welcome.blade.php) con diseño completo
-- [ ] Tests de feature y unitarios
-
-### Webhooks
-
-- [ ] Scheduler para reintentos automáticos
-- [ ] Registro de eventos en `WebhookEventRegistry` del core
-- [ ] UI de reintentos manuales
-
-### AI
-
-- [ ] AI playground (chat interactivo con templates)
-- [ ] Integración real con Laravel AI SDK
-- [ ] Alertas de presupuesto por email/notificación
-- [ ] Rate limiting por usuario/modelo
+- [ ] Integración real de Laravel AI SDK (requiere API keys de OpenAI/Anthropic en .env)
+- [ ] Actualizar `ai.php` config con providers reales
+- [ ] Integración real de WorkOS AuthKit (requiere cuenta + API keys)
 
 ---
 
